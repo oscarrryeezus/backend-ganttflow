@@ -8,7 +8,7 @@ require('dotenv').config();
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb://root:root@localhost:27017/ControlHorarios', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://oscaryeezus:Integradora6969Y$KanyeWest7468@cluster0.x4pasxe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.on('error', (error) => {
