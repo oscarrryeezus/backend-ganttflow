@@ -1,25 +1,4 @@
 const Empleado = require('../models/Empleado');
-const fs = require('fs')
-
-const express = require('express');
-const cors = require('cors')
-const app = express()
-const multer = require('multer')
-
-
- const storage = multer.diskStorage(
-    {
-        filename: function(res, file, cb){
-            const ext = file.originalname.split('.').pop()
-            const filename = Date.now()
-            cb(null,`${filename}.${ext}`)
-        },
-        destination: function(res, file, cb){
-            
-        }
-    }
- )
-
 
 const empleadoController = {
    create: async (req, res) => {
@@ -119,22 +98,7 @@ const empleadoController = {
       } catch (error) {
          res.status(500).json({ error: 'Error al eliminar el empleado', detalle: error.message });
       }
-   },
-
-   createMany: async (req, res) => {
-    try {
-      const empleados = req.body;
-      const empleadosGuardados = await Empleado.insertMany(empleados);
-      const ids = empleadosGuardados.map(admin => admin._id);
-      res.status(201).json({
-        message: 'Empleados creados exitosamente',
-        administradorIds: ids
-      });
-    } catch (error) {
-      res.status(500).json({ error: 'Error al crear nuevos empleados', detalle: error.message });
-    }
-  },
-  
+   }
    
 };
 

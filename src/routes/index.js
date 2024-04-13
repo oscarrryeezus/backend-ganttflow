@@ -22,6 +22,8 @@ const sedeRoute = require('./sedeRoutes')
 const authRoute = require('./authRoutes')
 const taskRoute = require ('./taskRoutes')
 const linkRoute = require ('./linkRoutes')
+const actividadesRoutes = require('./actividadesRoutes')
+
 //const cargaMasivaRoute = require('./cargaMasivaRoutes')
 
 
@@ -41,6 +43,7 @@ router.use('/sedes', sedeRoute)
 router.use('/auth', authRoute)
 router.use('/task', taskRoute); // Usar taskRoute en lugar de authRoute
 router.use('/link', linkRoute); 
+router.use('/actividades',actividadesRoutes)
 //router.use('/empleado', cargaMasivaRoute)
 
 

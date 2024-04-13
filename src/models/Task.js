@@ -4,27 +4,36 @@ const mongoose = require('mongoose');
 const TaskSchema = new mongoose.Schema({
     id: {
         type: Number,
-        required: true
     },
     start_date: {
         type: String,
-        required: true
+    },
+    end_date: {
+        type: String,
     },
     text: {
         type: String,
-        required: true
     },
     progress: {
         type: Number,
-        required: true
     },
     duration: {
         type: Number,
-        required: true
     },
     parent: {
         type: Number,
-        required: true
+    },
+    empleado: {
+        type: String,
+    },
+    departamento:{
+        type: String,
+    },
+    contrato: {
+        type: String,
+    },
+    sede: {
+        type: String,
     }
 });
 
