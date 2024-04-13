@@ -1,0 +1,2 @@
+export const PORT = process.env.PORT || 3000
+export const URL = process.env.URL || 'mongodb+srv://oscaryeezus:Integradora6969Y$KanyeWest7468@cluster0.x4pasxe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
