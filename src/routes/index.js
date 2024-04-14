@@ -14,7 +14,6 @@ const administradorRoutes = require('./administradorRoutes');
 const historialRoutes = require('./historialhorariosRoutes');
 const horarioRoutes = require('./solicitudhorarioRoutes');
 const vacacionesRoutes = require('./solicitudvacacionesRoutes');
-const turnoRoutes = require('./turnoRoutes');
 const correoRoutes = require('./correoRoutes');
 const contratosRouter = require('./contratosRoutes');
 const areaRoutes = require('./areaRoutes')
@@ -35,7 +34,6 @@ router.use('/administrador', administradorRoutes);
 router.use('/historial', historialRoutes);
 router.use('/horario', horarioRoutes);
 router.use('/vacaciones', vacacionesRoutes);
-router.use('/turno', turnoRoutes);
 router.use('/envio', correoRoutes)
 router.use('/contrato', contratosRouter);
 router.use('/area', areaRoutes)
