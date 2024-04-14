@@ -1,4 +1,4 @@
-const Area = require('../models/Area.js');
+const Area = require('../models/Area');
 
 const areaController = {
   create: async (req, res) => {

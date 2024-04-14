@@ -1,4 +1,4 @@
-const SolicitudVacaciones = require('../models/SolicitudVacaciones.js');
+const SolicitudVacaciones = require('../models/SolicitudVacaciones');
 
 const solicitudVacacionesController = {
 

@@ -1,4 +1,4 @@
-const Actividades = require('../models/Actividades.js')
+const Actividades = require('../models/Actividades')
 
 const actividadesController = {
     create: async (req, res) => {
