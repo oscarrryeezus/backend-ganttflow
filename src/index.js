@@ -5,10 +5,17 @@ const bodyparser = require('body-parser')
 require('dotenv').config();
 
 
+
+
+const URL_CONNECT = process.env.URL_CONNECT;
+const PORT = process.env.PORT;
+
+
+
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb+srv://oscaryeezus:Integradora6969Y$KanyeWest7468@cluster0.x4pasxe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(URL_CONNECT, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.on('error', (error) => {
