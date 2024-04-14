@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const correoController = require('../controllers/correoController');
+const correoController = require('../controllers/correoController.js');
 
 router.post('/',correoController.envioCorreo);
 

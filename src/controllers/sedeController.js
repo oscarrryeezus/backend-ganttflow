@@ -1,4 +1,4 @@
-const Sede = require('../models/Sede');
+const Sede = require('../models/Sede.js');
 
 const sedeController = {
   create: async (req, res) => {

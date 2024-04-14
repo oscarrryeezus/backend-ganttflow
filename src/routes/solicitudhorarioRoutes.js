@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const solicitudhorarioController = require('../controllers/solicitudhorarioController');
+const solicitudhorarioController = require('../controllers/solicitudhorarioController.js');
 
 router.post('/', solicitudhorarioController.create);
 router.get('/', solicitudhorarioController.getAll);

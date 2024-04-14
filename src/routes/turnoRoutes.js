@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const turnoController = require('../controllers/turnoController');
+const turnoController = require('../controllers/turnoController.js');
 
 router.post('/', turnoController.create);
 router.get('/', turnoController.getAll);

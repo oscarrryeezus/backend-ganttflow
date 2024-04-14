@@ -1,4 +1,4 @@
-const Contratos = require('../models/Contratos');
+const Contratos = require('../models/Contratos.js');
 
 const contratosController = {
   create: async (req, res) => {

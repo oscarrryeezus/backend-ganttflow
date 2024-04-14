@@ -1,4 +1,4 @@
-const Task = require('../models/Task');
+const Task = require('../models/Task.js');
 const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 

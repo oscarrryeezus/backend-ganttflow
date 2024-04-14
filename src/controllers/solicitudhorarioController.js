@@ -1,4 +1,4 @@
-const SolicitudHorario = require('../models/SolicitudHorario');
+const SolicitudHorario = require('../models/SolicitudHorario.js');
 
 const solicitudHorarioController = {
   create: async (req, res) => {

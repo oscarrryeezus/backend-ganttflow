@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const contratosController = require('../controllers/contratosController');
+const contratosController = require('../controllers/contratosController.js');
 
 router.post('/', contratosController.create);
 router.get('/', contratosController.getAll);

@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const historialhorarioController = require('../controllers/historialhorarioController');
+const historialhorarioController = require('../controllers/historialhorarioController.js');
 
 router.post('/', historialhorarioController.create);
 router.get('/', historialhorarioController.getAll);

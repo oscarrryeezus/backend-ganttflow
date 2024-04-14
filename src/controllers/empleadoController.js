@@ -1,4 +1,4 @@
-const Empleado = require('../models/Empleado');
+const Empleado = require('../models/Empleado.js');
 
 const empleadoController = {
    create: async (req, res) => {

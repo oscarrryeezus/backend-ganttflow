@@ -1,4 +1,4 @@
-const Link = require('../models/Link');
+const Link = require('../models/Link.js');
 
 // Controlador para las operaciones de la colección de enlaces
 const linkController = {

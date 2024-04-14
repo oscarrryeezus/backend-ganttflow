@@ -1,4 +1,4 @@
-const HistorialHorario = require('../models/HistorialHorario');
+const HistorialHorario = require('../models/HistorialHorario.js');
 
 const historialHorarioController = {
   create: async (req, res) => {

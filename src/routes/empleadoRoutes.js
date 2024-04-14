@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const empleadoController = require('../controllers/empleadoController');
+const empleadoController = require('../controllers/empleadoController.js');
 
 router.post('/', empleadoController.create);
 router.get('/', empleadoController.getAll);

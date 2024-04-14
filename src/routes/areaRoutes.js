@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const areaController = require('../controllers/areaController');
+const areaController = require('../controllers/areaController.js');
 
 router.post('/', areaController.create);
 router.get('/', areaController.getAll);

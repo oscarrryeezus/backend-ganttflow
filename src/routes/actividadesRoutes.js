@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const actividadesControllers = require('../controllers/actividadesControllers');
+const actividadesControllers = require('../controllers/actividadesControllers.js');
 
 router.post('/', actividadesControllers.create);
 router.get('/', actividadesControllers.getAll);

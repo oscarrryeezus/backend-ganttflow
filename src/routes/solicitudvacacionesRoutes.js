@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const solicitudvacacionesController = require('../controllers/solicitudvacacionesController');
+const solicitudvacacionesController = require('../controllers/solicitudvacacionesController.js');
 
 router.post('/', solicitudvacacionesController.create);
 router.get('/', solicitudvacacionesController.getAll);

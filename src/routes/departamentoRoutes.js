@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const departamentoController = require('../controllers/departamentoController');
+const departamentoController = require('../controllers/departamentoController.js');
 
 router.post('/', departamentoController.create);
 router.get('/', departamentoController.getAll);

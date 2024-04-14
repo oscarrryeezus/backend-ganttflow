@@ -1,4 +1,4 @@
-const Turno = require('../models/turno');
+const Turno = require('../models/turno.js');
 
 const turnoController = {
   create: async (req, res) => {

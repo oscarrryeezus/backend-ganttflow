@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
-const Empleado = require('../models/Empleado');
-const Administrador = require('../models/Administrador');
+const Empleado = require('../models/Empleado.js');
+const Administrador = require('../models/Administrador.js');
 
 const authController = {
     login: async (req, res) => {

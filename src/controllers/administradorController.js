@@ -1,4 +1,4 @@
-const Administrador = require('../models/Administrador');
+const Administrador = require('../models/Administrador.js');
 
 const administradorController = {
   create: async (req, res) => {

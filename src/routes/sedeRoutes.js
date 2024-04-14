@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const sedeController= require('../controllers/sedeController');
+const sedeController= require('../controllers/sedeController.js');
 
 router.post('/', sedeController.create);
 router.get('/', sedeController.getAll);
