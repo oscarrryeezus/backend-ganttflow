@@ -11,6 +11,6 @@ router.put('/:correo', empleadoController.update);
 router.delete('/:correo', empleadoController.delete);
 router.get('/exists/:correo', empleadoController.verificarCorreoExistente);
 router.put('/actualizarHorario/:correo', empleadoController.updateByEmail);
-router.post('/cargamasiva/')
+router.post('/cargamasiva/', empleadoController.cargaMasiva);
 
 module.exports = router;
