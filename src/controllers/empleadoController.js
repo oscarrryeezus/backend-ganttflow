@@ -98,7 +98,29 @@ const empleadoController = {
       } catch (error) {
          res.status(500).json({ error: 'Error al eliminar el empleado', detalle: error.message });
       }
-   }
+   },
+
+   cargaMasiva: async (req, res) => {
+    try {
+       const empleados = req.body; // Suponiendo que los datos de los empleados se envían en el cuerpo de la solicitud en formato de arreglo
+       
+       // Verificar si ya existe algún empleado con los correos electrónicos proporcionados
+       const correosExistentes = await Empleado.find({ Correo: { $in: empleados.map(emp => emp.Correo) } });
+       if (correosExistentes.length > 0) {
+          const correosDuplicados = correosExistentes.map(emp => emp.Correo);
+          return res.status(400).json({ error: 'Algunos empleados ya existen con los siguientes correos electrónicos: ' + correosDuplicados.join(', ') });
+       }
+
+       // Crear y guardar los nuevos empleados
+       const empleadosGuardados = await Empleado.create(empleados);
+       res.status(201).json({
+          message: 'Empleados creados exitosamente',
+          empleadosIds: empleadosGuardados.map(emp => emp._id)
+       });
+    } catch (error) {
+       res.status(500).json({ error: 'Error al crear empleados', detalle: error.message });
+    }
+ }
    
 };
 
